@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 436451271}
   - component: {fileID: 436451270}
   - component: {fileID: 436451272}
+  - component: {fileID: 436451273}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -206,6 +207,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mob: {fileID: 436451269}
   speed: -1
+--- !u!114 &436451273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436451269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8696784d831be5345881852bd4468a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 0
+  Health: 0
+  Defence: 0
+  AttackSpeed: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +265,7 @@ MonoBehaviour:
   cameraObject: {fileID: 519420031}
   BackgroundMap: {fileID: 1316292635}
   dragSpeed: 2
+  lockMovement: 18
   dragOrigin: {x: 0, y: 0, z: 0}
 --- !u!20 &519420031
 Camera:
