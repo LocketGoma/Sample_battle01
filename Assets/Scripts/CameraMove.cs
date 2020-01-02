@@ -45,13 +45,12 @@ public class CameraMove : MonoBehaviour
         Vector3 move = new Vector3(pos.x * dragSpeed, 0, 0);            //'움직이고 싶은 정도'를 담게 됨. 좌 -> 우 : +, 우 -> 좌 : -
 
 
-        Debug.Log(move.x);
+        //Debug.Log(move.x);
 
         if (Math.Abs(transform.position.x+move.x) > lockMovement)       //가끔 튕겨져나가는? 버그같은게 보이는데 나중에 확인해놓을것.
         {
             move = new Vector3(0, 0, 0);
         }
-
 
         transform.Translate(move, Space.World);                         //월드 좌표계 기준 move vector 값 만큼 이동.
         BackgroundMap.transform.Translate(move, Space.World);

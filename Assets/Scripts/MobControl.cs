@@ -28,4 +28,24 @@ public class MobControl : MonoBehaviour
     {
         
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("On");
+        if (collision.gameObject.tag == gameObject.tag)
+        {
+            Physics2D.IgnoreCollision(collision.collider, this.GetComponent<Collider2D>());            
+        }
+
+
+    }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == gameObject.tag)
+        {
+            Physics2D.IgnoreCollision(collision.collider, this.GetComponent<Collider2D>());            
+        }
+
+
+    }
+
 }
