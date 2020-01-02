@@ -15,6 +15,8 @@ public class tempmove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*      //Legacy
         transform.position = new Vector3(transform.position.x + (speed/100), transform.position.y, transform.position.z);
+        */
     }
 }
