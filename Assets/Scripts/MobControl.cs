@@ -15,12 +15,15 @@ public class MobControl : MonoBehaviour
     [Range(1, 10)]
     public int AttackSpeed;     //공격 빈도 (5초당 N회)
 
+    [Header("Target")]
+    private GameObject enemy;
+
     //데미지 공식 : (공격력 / 방어력)+1, 크리티컬시 2.5배 데미지, 크리티컬 확률 공식 = ?
 
 
     void Start()
     {
-        
+        enemy = null;
     }
 
     // Update is called once per frame
@@ -34,6 +37,14 @@ public class MobControl : MonoBehaviour
         if (collision.gameObject.tag == gameObject.tag)
         {
             Physics2D.IgnoreCollision(collision.collider, this.GetComponent<Collider2D>());            
+        }
+        if (enemy == null)
+        {
+            if (collision.gameObject.tag != "default" && collision.gameObject.tag != gameObject.tag)
+            {
+                enemy = collision.gameObject;
+
+            }
         }
 
 
