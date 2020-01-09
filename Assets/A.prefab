@@ -159,6 +159,7 @@ MonoBehaviour:
   Health: 0
   Defence: 0
   AttackSpeed: 0
+  RespawnTime: 5
 --- !u!114 &463310830487898688
 MonoBehaviour:
   m_ObjectHideFlags: 0

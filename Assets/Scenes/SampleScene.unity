@@ -760,7 +760,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6c2fd0bd521dca04ca2f5bc7e7beb4bd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1970,6 +1970,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mob: {fileID: 8021717735669415913, guid: ef5f646aef944c74a91d092f2b576bb1, type: 3}
   rawSpawnpoint: {fileID: 1173142577}
+  SpawnCost: 0
+  Cooltime: 5
   layerdata: 0
 --- !u!1 &1777651623
 GameObject:
@@ -2307,6 +2309,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mob: {fileID: 4435208154214552576, guid: 4f094e1917e64e447b69117cc43526df, type: 3}
   rawSpawnpoint: {fileID: 1173142577}
+  SpawnCost: 0
+  Cooltime: 5
   layerdata: 0
 --- !u!1 &2002777073
 GameObject:
@@ -2448,6 +2452,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mob: {fileID: 463310830487898703, guid: ff3066b9500c4b94294c3fbd98e79dc9, type: 3}
   rawSpawnpoint: {fileID: 1173142577}
+  SpawnCost: 0
+  Cooltime: 5
   layerdata: 0
 --- !u!1 &2013576284
 GameObject:
@@ -2603,4 +2609,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mob: {fileID: 7142205214172705509, guid: 7318c984e4dae024284daf91b7744ac3, type: 3}
   rawSpawnpoint: {fileID: 1173142577}
+  SpawnCost: 0
+  Cooltime: 5
   layerdata: 0

@@ -14,6 +14,8 @@ public class MobControl : MonoBehaviour
     public int Defence;         //방어력
     [Range(1, 10)]
     public int AttackSpeed;     //공격 빈도 (5초당 N회)
+    [Range(2, 60)]
+    public int RespawnTime;
 
     [Header("Target")]
     private GameObject enemy;
@@ -26,11 +28,13 @@ public class MobControl : MonoBehaviour
         enemy = null;
     }
 
-    // Update is called once per frame
-    void Update()
+    public int getRespawnTime()
     {
-        
+        return RespawnTime;
     }
+
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("On");
