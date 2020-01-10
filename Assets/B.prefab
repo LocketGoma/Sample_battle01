@@ -98,10 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8696784d831be5345881852bd4468a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 0
-  Health: 0
-  Defence: 0
-  AttackSpeed: 0
+  Damage: 10
+  Health: 20
+  Defence: 100
+  AttackSpeed: 2
+  RespawnTime: 10
 --- !u!114 &4435208154214552579
 MonoBehaviour:
   m_ObjectHideFlags: 0

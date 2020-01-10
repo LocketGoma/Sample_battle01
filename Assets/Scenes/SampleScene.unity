@@ -760,7 +760,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6c2fd0bd521dca04ca2f5bc7e7beb4bd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -940,9 +940,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1173142577}
   - component: {fileID: 1173142576}
+  - component: {fileID: 1173142578}
   m_Layer: 0
   m_Name: BluePoint
-  m_TagString: Untagged
+  m_TagString: BlueMob
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1014,6 +1015,23 @@ RectTransform:
   m_AnchoredPosition: {x: 27, y: -1.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1173142578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173142575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8696784d831be5345881852bd4468a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 0
+  Health: 10000
+  Defence: 0
+  AttackSpeed: 1
+  RespawnTime: 2
 --- !u!1 &1235116944
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,6 +1706,108 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &1704465714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1704465716}
+  - component: {fileID: 1704465715}
+  - component: {fileID: 1704465717}
+  m_Layer: 0
+  m_Name: RedPoint
+  m_TagString: RedMob
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1704465715
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704465714}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 34e9bb8a0af43fa479aaf367a8e0c4cf, type: 3}
+  m_Color: {r: 0.8941177, g: 0.24705884, b: 0.2509804, a: 1}
+  m_FlipX: 1
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5, y: 5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!224 &1704465716
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704465714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 13}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -27, y: -1.7}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1704465717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704465714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8696784d831be5345881852bd4468a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 0
+  Health: 10000
+  Defence: 0
+  AttackSpeed: 1
+  RespawnTime: 2
 --- !u!1 &1734624884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,7 +2090,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mob: {fileID: 8021717735669415913, guid: ef5f646aef944c74a91d092f2b576bb1, type: 3}
   rawSpawnpoint: {fileID: 1173142577}
+  SpawnCost: 0
+  Cooltime: 5
   layerdata: 0
+  respawnTime: 0
 --- !u!1 &1777651623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,7 +2430,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mob: {fileID: 4435208154214552576, guid: 4f094e1917e64e447b69117cc43526df, type: 3}
   rawSpawnpoint: {fileID: 1173142577}
+  SpawnCost: 0
+  Cooltime: 5
   layerdata: 0
+  respawnTime: 0
 --- !u!1 &2002777073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,7 +2574,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mob: {fileID: 463310830487898703, guid: ff3066b9500c4b94294c3fbd98e79dc9, type: 3}
   rawSpawnpoint: {fileID: 1173142577}
+  SpawnCost: 0
+  Cooltime: 5
   layerdata: 0
+  respawnTime: 0
 --- !u!1 &2013576284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2603,4 +2732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mob: {fileID: 7142205214172705509, guid: 7318c984e4dae024284daf91b7744ac3, type: 3}
   rawSpawnpoint: {fileID: 1173142577}
+  SpawnCost: 0
+  Cooltime: 5
   layerdata: 0
+  respawnTime: 0
