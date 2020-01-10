@@ -98,10 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8696784d831be5345881852bd4468a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 0
-  Health: 0
+  Damage: 10
+  Health: 100
   Defence: 0
-  AttackSpeed: 0
+  AttackSpeed: 5
+  RespawnTime: 10
 --- !u!114 &7142205214172705512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d0c4b02d7879db49ab7ef0b92f342d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
+  speed: 25
   isEnemy: 0
   speedGap: 1000
 --- !u!61 &7142205214172705514

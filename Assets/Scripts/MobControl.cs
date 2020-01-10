@@ -7,15 +7,15 @@ public class MobControl : MonoBehaviour
     // Start is called before the first frame update
     [Header("기본 수치")]
     [Range(0,100)]
-    public int Damage;          //공격력
+    public int Damage=10;          //공격력
     [Range(0,10000)]
-    public int Health;          //체력
+    public int Health=100;          //체력
     [Range(0,100)]
-    public int Defence;         //방어력
+    public int Defence=0;         //방어력 (감쇄 데미지 = (데미지/방어력) +1 (무조건 데미지 1은 들어가도록)
     [Range(1, 10)]
-    public int AttackSpeed;     //공격 빈도 (5초당 N회)
+    public int AttackSpeed=2;     //공격 빈도 (5초당 N회)
     [Range(2, 60)]
-    public int RespawnTime;
+    public int RespawnTime=10;
 
     [Header("Target")]
     private GameObject enemy;
